@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ship Anomaly Detection</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">Ship Anomaly Detection</h1>
+        <p>Please enter the details of the ship to check if it is anomalous or not.</p>
+        
+        <form action="{{ url_for('predict') }}" method="POST">
+            <div class="form-group">
+                <label for="lat">Latitude (LAT)</label>
+                <input type="number" step="any" class="form-control" id="lat" name="lat" required>
+            </div>
+            <div class="form-group">
+                <label for="lon">Longitude (LON)</label>
+                <input type="number" step="any" class="form-control" id="lon" name="lon" required>
+            </div>
+            <div class="form-group">
+                <label for="sog">Speed Over Ground (SOG)</label>
+                <input type="number" step="any" class="form-control" id="sog" name="sog" required>
+            </div>
+            <div class="form-group">
+                <label for="cog">Course Over Ground (COG)</label>
+                <input type="number" step="any" class="form-control" id="cog" name="cog" required>
+            </div>
+            <div class="form-group">
+                <label for="heading">Heading</label>
+                <input type="number" step="any" class="form-control" id="heading" name="heading" required>
+            </div>
+            <div class="form-group">
+                <label for="length">Length</label>
+                <input type="number" step="any" class="form-control" id="length" name="length" required>
+            </div>
+            <div class="form-group">
+                <label for="width">Width</label>
+                <input type="number" step="any" class="form-control" id="width" name="width" required>
+            </div>
+            <div class="form-group">
+                <label for="draft">Draft</label>
+                <input type="number" step="any" class="form-control" id="draft" name="draft" required>
+            </div>
+            <div class="form-group">
+                <label for="cargo">Cargo</label>
+                <input type="number" step="any" class="form-control" id="cargo" name="cargo" required>
+            </div>
+            <div class="form-group">
+                <label for="speed_delta">Speed Delta</label>
+                <input type="number" step="any" class="form-control" id="speed_delta" name="speed_delta" required>
+            </div>
+            <div class="form-group">
+                <label for="course_delta">Course Delta</label>
+                <input type="number" step="any" class="form-control" id="course_delta" name="course_delta" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="model_choice">Choose Prediction Model</label>
+                <select class="form-control" id="model_choice" name="model_choice" required>
+                    <option value="svr">SVR (Support Vector Regression)</option>
+                    <option value="logreg">Logistic Regression</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Predict</button>
+        </form>
+    </div>
+</body>
+</html>
