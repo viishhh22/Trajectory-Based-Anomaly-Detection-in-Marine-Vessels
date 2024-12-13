@@ -73,10 +73,11 @@ AIS data includes critical attributes such as latitude, longitude, speed over gr
 
    - Classifies anomalies into actionable categories, such as unauthorized zone entries and suspicious idling.
    - Achieved a classification accuracy of **91%**.
-
 ---
 
 ## Results
+
+![Screenshot (884)](https://github.com/user-attachments/assets/7a83d758-4cf0-429b-aaa3-98162face7d8)
 
 
 ### Run the Project
