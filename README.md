@@ -10,10 +10,6 @@ This repository contains the implementation of an integrated machine learning fr
 4. [Data Preprocessing](#data-preprocessing)
 5. [Models and Methodology](#models-and-methodology)
 6. [Results](#results)
-7. [Usage](#usage)
-8. [Contributing](#contributing)
-9. [License](#license)
-
 ---
 
 ## Introduction
