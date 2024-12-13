@@ -81,6 +81,12 @@ AIS data includes critical attributes such as latitude, longitude, speed over gr
 ![Screenshot (890)](https://github.com/user-attachments/assets/28dea210-50ea-4349-acf1-a77ca34774a0)
 ![Screenshot (891)](https://github.com/user-attachments/assets/d8e33432-0a8a-4b41-9a8a-5570fe7cc52f)
 ![Screenshot (893)](https://github.com/user-attachments/assets/8c6be3fc-2f48-4cc3-8f44-93c1acca8ed4)
+![image](https://github.com/user-attachments/assets/4b208c9c-4114-415c-9b7c-2241e4619484)
+![image](https://github.com/user-attachments/assets/cc4b00fb-f890-4c8c-bb31-6686ef6443e4)
+![image](https://github.com/user-attachments/assets/53c4293f-e46d-466e-ad30-54dfceb4729d)
+![image](https://github.com/user-attachments/assets/d25b3090-2337-4970-bdba-e1972b32b8e1)
+![image](https://github.com/user-attachments/assets/d79e0d00-d746-46d5-b5d2-14a7823e73d0)
+![image](https://github.com/user-attachments/assets/e3c6a832-ff39-49a3-9583-a958439393dc)
 ![Screenshot (894)](https://github.com/user-attachments/assets/9c225e5c-2ba8-4be3-81b3-a9f1f45bdcac)
 
 
