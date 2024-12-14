@@ -16,6 +16,51 @@ This repository contains the implementation of an integrated machine learning fr
 
 The exponential growth of maritime traffic has increased the risk of anomalous activities, such as unauthorized zone entry, illegal fishing, and smuggling. This project leverages machine learning techniques for real-time detection and classification of such anomalies using AIS data. By integrating clustering (DBSCAN), regression (SVR), and classification (Logistic Regression) models, this framework provides actionable insights to enhance maritime operations.
 
+### Networking Knowledge, DSA Concepts, and SQLite/Flask Usage in Project:
+
+#### **Networking-Related Knowledge**
+1. **Automatic Identification System (AIS):**
+   - AIS data represents a real-world application of maritime networking. It tracks vessel positions, speeds, and movements, forming the basis of your anomaly detection.
+   - The project involves understanding geospatial data (latitude, longitude), which is crucial in networking contexts like routing, GPS systems, and IoT networks.
+
+2. **Client-Server Communication:**
+   - Flask's role as a web framework enables client-server interactions, where user requests (via forms or APIs) are processed on the server-side to generate predictions or handle user data.
+
+3. **Web Routing:**
+   - Routes like `/register`, `/login`, and `/predict` implement HTTP communication patterns (GET and POST methods) common in web development.
+
+---
+
+#### **Data Structures and Algorithms (DSA) Concepts**
+1. **Feature Engineering:**
+   - Utilizes arrays (via NumPy) to process and organize AIS data, incorporating derived attributes such as speed and course deltas.
+   - PCA (Principal Component Analysis) is an optimization algorithm that reduces data dimensionality, enhancing efficiency for large datasets.
+
+2. **Clustering Algorithms:**
+   - DBSCAN (Density-Based Spatial Clustering of Applications with Noise) groups data points based on density, employing graph traversal concepts to identify connected regions.
+
+3. **Classification Algorithms:**
+   - Logistic Regression and SVR (Support Vector Regression) apply mathematical optimization and linear algebra to predict and classify anomalies.
+
+4. **Hashing for Security:**
+   - Passwords are hashed using bcrypt, a secure cryptographic algorithm, before being stored in the database.
+
+---
+
+#### **SQLite Database with Flask**
+1. **Database Integration:**
+   - SQLite is a lightweight relational database used for managing user and contact information, as defined in the `User` and `Contact` models in your code.
+
+2. **SQLAlchemy ORM:**
+   - SQLAlchemy handles object-relational mapping (ORM), allowing Python classes (`User`, `Contact`) to interact seamlessly with the SQLite database without writing raw SQL queries.
+
+3. **Session Management:**
+   - Flask session management enables secure, temporary storage of user credentials (e.g., email) during active logins, ensuring restricted access to user-specific data like the dashboard.
+
+4. **CRUD Operations:**
+   - `db.session.add` and `db.session.commit` represent Create operations.
+   - Queries such as `User.query.filter_by(email=email).first()` implement Read operations.
+   - These are fundamental database operations, integral to web development.
 ---
 
 ## Features
